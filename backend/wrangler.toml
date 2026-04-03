@@ -1,0 +1,14 @@
+name = "image-background-remover-worker"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+REMOVE_BG_API_KEY = ""
+
+[env.production]
+name = "image-background-remover-worker"
+workers_dev = true
+
+[env.staging]
+name = "image-background-remover-worker-staging"
+workers_dev = true
